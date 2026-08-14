@@ -7,7 +7,9 @@ import pickle
 
 # Load the trained model
 model = tf.keras.models.load_model('model.h5')
-
+git add -f one_hot_encoder_geography.pkl
+git commit -m "Add encoder pickle file"
+git push origin main
 # Load the encoders and scaler
 with open('label_encoder_gender.pkl', 'rb') as file:
     label_encoder_gender = pickle.load(file)
